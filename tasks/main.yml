@@ -8,7 +8,7 @@
     group: "{{ item.value.group | default(omit) }}"
     groups: "{{ item.value.groups | default(omit) }}"
     home: "{{ item.value.home | default(omit) }}"
-    name: "{{ item.value.key }}"
+    name: "{{ item.key }}"
     password: "{{ item.value.password | default(omit) }}"
     shell: "{{ item.value.shell | default(omit) }}"
     state: "{{ item.value.state | default(omit) }}"
