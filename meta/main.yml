@@ -1,0 +1,17 @@
+---
+
+galaxy_info:
+  author: ruimiguel
+  description: User Management
+  company: MACC
+  license: MIT
+  min_ansible_version: 2.4
+  platforms:
+    - name: Any
+      versions:
+        - all
+  galaxy_tags:
+    - authentication
+    - users
+    - accounts
+dependencies: []

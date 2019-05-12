@@ -1,0 +1,15 @@
+---
+
+- name: manage system users
+  user:
+    append: "{{ item.value.append | default(omit) }}"
+    comment: "{{ item.value.comment | default(omit) }}"
+    expires: "{{ item.value.expires | default(omit) }}"
+    group: "{{ item.value.group | default(omit) }}"
+    groups: "{{ item.value.groups | default(omit) }}"
+    home: "{{ item.value.home | default(omit) }}"
+    name: "{{ item.key }}"
+    password: "{{ item.password | default(omit) }}"
+    shell: "{{ item.shell | default(omit) }}"
+    state: "{{ item.state | default(omit) }}"
+  loop: "{{ system_users | dict2items }}"

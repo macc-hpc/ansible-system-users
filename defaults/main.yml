@@ -1,0 +1,7 @@
+---
+
+system_users:
+  testeuser1:
+    append: yes
+    comment: 'Test User #1'
+    state: present
